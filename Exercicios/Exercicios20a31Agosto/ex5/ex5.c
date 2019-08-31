@@ -10,12 +10,12 @@ int main(int argc, char *argv[]) {
 	while(opcao != 0)
 	{
 	printf("Escolha uma opcao: \n");
-	printf("1 \n");
-	printf("2 \n");
-	printf("3 \n");
-	printf("4 \n");
-	printf("5 \n");
-	printf("6 \n");
+	printf("1 - Primeira palavra \n");
+	printf("2 - Tamanho\n");
+	printf("3 - Segunda palavra\n");
+	printf("4 - Concatenar as palavras\n");
+	printf("5 - Primeira palavra reversa\n");
+	printf("6 - Contar caractere\n");
 	printf("7 \n");
 	scanf("%d",&opcao);
 	
@@ -36,6 +36,7 @@ int main(int argc, char *argv[]) {
 			e();
 			break;
 		case 6:
+			f();
 			break;
 		case 7:
 			break;
@@ -80,4 +81,21 @@ void d()
 void e()
 {
 	printf("Reversa: %s", strrev(S1));
+}
+
+void f()
+{
+	int j = 0, contador = 0;
+	char c;
+	printf("Digite um caractere a ser contado: \n");
+	scanf("%s",&c);
+	
+	for(j = 0; j < strlen(S1); j++)
+	{
+		if(strcmp(S1[j],c) == 0)
+		{
+			contador ++;
+		}
+	}
+	printf("Repete-se o caracter %s  %d vezes",&c,&contador);
 }
