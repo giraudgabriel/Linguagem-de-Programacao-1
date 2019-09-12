@@ -57,40 +57,100 @@ int main(int argc, char *argv[]) {
 				programa = Ex13();
 				break;
 			case 14:
-				programa = Ex10();
+				programa = Ex14();
 				break;
 			case 15:
-				programa = Ex10();
+				programa = Ex15();
 				break;
 			case 16:
-				programa = Ex10();
+				programa = Ex16();
 				break;
 			case 17:
-				programa = Ex10();
+				programa = Ex17();
 				break;
 			case 18:
-				programa = Ex10();
+				programa = Ex18();
 				break;
 			case 19:
-				programa = Ex10();
+				programa = Ex19();
 				break;
 			case 20:
-				programa = Ex10();
+				programa = Ex20();
+				break;
+			case 21:
+				programa = Ex21();
+				break;
+			case 22:
+				programa = Ex22();
+				break;
+			case 23:
+				programa = Ex23();
+				break;
+			case 24:
+				programa = Ex24();
+				break;
+			case 25:
+				programa = Ex25();
+				break;
+			case 26:
+				programa = Ex26();
+				break;
+			case 27:
+				programa = Ex27();
+				break;				
+			case 28:
+				programa = Ex28();
+				break;
+			case 29:
+				programa = Ex29();
+				break;
+			case 30:
+				programa = Ex30();
+				break;
+			case 31:
+				programa = Ex31();
+				break;
+			case 32:
+				programa = Ex32();
+				break;
+			case 33:
+				programa = Ex33();
+				break;
+			case 34:
+				programa = Ex34();
+				break;
+			case 35:
+				programa = Ex35();
+				break;
+			case 36:
+				programa = Ex36();
+				break;
+			case 37:
+				programa = Ex37();
+				break;
+			case 38:
+				programa = Ex38();
+				break;
+			case 39:
+				programa = Ex39();
+				break;
+			case 40:
+				programa = Ex40();
+				break;
+			case 41:
+				programa = Ex41();
 				break;
 		}
 					
 		i=1;
-	}
-	
+	}	
 	return 0;
 }
-
 typedef enum
 {
      false = 0,
      true = 1
 } bool ;
-
 int Continuar()
 {
 	int continuar = 0;
@@ -98,7 +158,6 @@ int Continuar()
 	scanf("%d",&continuar);
 	return continuar;
 }
-
 int GetInt()
 {
 	int numero;
@@ -113,7 +172,6 @@ float GetFloat(char* texto)
 	scanf("%f",&numero);
 	return numero;
 }
-
 int MaiorNumero(int numero1,int numero2)
 {
 	int maior = 0;
@@ -127,7 +185,6 @@ int MaiorNumero(int numero1,int numero2)
 	}
 	return maior;
 }
-
 int Ex1()
 {
 	int numero1 = GetInt();
@@ -137,13 +194,11 @@ int Ex1()
 	
 	return Continuar();
 }
-
 bool IsPositivo(int numero)
 {
 	bool positivo = numero > 0 ? true : false; 
 	return positivo;
 }
-
 int CalcularRaiz()
 {
 	int numero = GetInt();
@@ -158,7 +213,6 @@ int CalcularRaiz()
 	}
 	return Continuar();
 }
-
 int Ex3()
 {
 	float numero;
@@ -174,7 +228,6 @@ int Ex3()
 	}
 	return Continuar();
 }
-
 int Ex4()
 {
 	float numero;
@@ -196,7 +249,6 @@ int Ex5()
 		printf("Impar \n");
 	return Continuar();
 }
-
 int Ex6()
 {
 	int n1 = GetInt();
@@ -264,7 +316,7 @@ int Ex10()
 }
 int Ex11()
 {
-	
+return Continuar();
 }
 int Ex12()
 {
@@ -291,7 +343,6 @@ int Ex13()
 		printf("Reprovado! \n");
 	return Continuar();
 }
-
 int Ex14()
 {
 	float p1 = GetFloat("Digite a nota : \n") *2;
@@ -313,18 +364,25 @@ int Ex15()
 	{
 		case 1:
 			printf("Domingo");
+			break;
 		case 2:
 			printf("Segunda-feira");
+			break;
 		case 3:
 			printf("Terca-Feira");
+			break;
 		case 4:
 			printf("Quarta Feira");
+			break;
 		case 5:
 			printf("Quinta Feira");
+			break;
 		case 6:
 			printf("Sexta Feira");
+			break;
 		case 7:
 			printf("Sabado");
+			break;
 	}
 	printf("\n");
 	return Continuar();
@@ -336,28 +394,40 @@ int Ex16()
 	{
 		case 1:
 			printf("Janeiro");
+			break;
 		case 2:
 			printf("Fevereiro");
+			break;
 		case 3:
 			printf("Marco");
+			break;
 		case 4:
 			printf("Abril");
+			break;
 		case 5:
 			printf("Maio");
+			break;
 		case 6:
 			printf("Junho");
+			break;
 		case 7:
 			printf("Julho");
+			break;
 		case 8:
 			printf("Agosto");
+			break;
 		case 9:
 			printf("Setembro");
+			break;
 		case 10:
 			printf("Outubro");
+			break;
 		case 11:
 			printf("Novembro");
+			break;
 		case 12:
 			printf("Dezembro");
+			break;
 	}
 	printf("\n");
 	return Continuar();
@@ -371,7 +441,7 @@ int Ex17()
 	printf("A area do trapezio e %f \n",area);
 	return Continuar();	
 }
-float operacao (float n1, float n2, char tipo)
+float Operacao (float n1, float n2, char tipo)
 {
 	if(tipo == '+') return n1+n2;
 	if(tipo == '-') return n1 - n2;
@@ -383,13 +453,13 @@ int Ex18()
 	float numero1 = GetFloat("Digite um numero:\n");
 	float numero2 = GetFloat("Digite um numero:\n");
 	char tipo;
-	printf("Selecione uma operacao:\n");
+	printf("Selecione uma Operacao:\n");
 	printf("+\n");
 	printf("-\n");
 	printf("/\n");
 	printf("*\n");
-	scanf("%c",&operacao);
-	float resultado = operacao(numero1,numero2,tipo);
+	gets(tipo);
+	float resultado = Operacao(numero1,numero2,tipo);
 	printf("Resultado de %f %c %f = %f \n",numero1,tipo,numero2,resultado);
 	return Continuar();
 }
@@ -429,7 +499,6 @@ int Ex20()
 	}
 	return Continuar();
 }
-
 int Ex21()
 {
 	char opcao;
@@ -437,11 +506,10 @@ int Ex21()
 	scanf("%s",opcao);
 	float numero1 = GetFloat("Digite um numero:\n");
 	float numero2 = GetFloat("Digite um numero:\n");
-	float resultado = operacao(numero1,numero2,opcao);
+	float resultado = Operacao(numero1,numero2,opcao);
 	printf("Resultado : %f \n",resultado);
 	return Continuar();
 }
-
 int Ex22()
 {
 	float idade = GetFloat("Digite sua idade :\n");
@@ -454,7 +522,6 @@ int Ex22()
 		printf("Nao pode aposentar!\n");
 	return Continuar();
 }
-
 int Ex23()
 {
 	int ano = GetInt();
@@ -468,6 +535,7 @@ int Ex23()
 }
 int Ex24()
 {
+	
 	char* estado;
 	float valor = GetFloat("Digite o valor:\n");
 	printf("Digite um estado:\n");
@@ -499,3 +567,154 @@ int Ex24()
 	printf("O valor e %f : \n",valor);
 	return Continuar();
 }
+int Ex25()
+{
+	int a = (int)GetFloat("Digite o valor de a: \n");
+	int b = (int)GetFloat("Digite o valor de b: \n");
+	int c = (int)GetFloat("Digite o valor de c: \n");
+	
+	if(a == 0)
+	{
+		printf("Nao e uma equacao de segundo grau! \n");
+		return Continuar();
+	}
+	int delta = b*b - 4 * a * c;
+	if(delta == 0)
+	{
+		printf("Nao existe raiz \n");
+	}
+	else if(delta <=0)
+	{
+		printf("Raiz %f - Raiz Unica \n",sqrt(delta));
+	}
+	else if(delta >=0)
+	{
+		printf("as duas raizes \n");
+	}
+	return Continuar();
+}
+int Ex26()
+{
+	int distancia = (int)GetFloat("Insira a distancia:\n");
+	int litros = (int)GetFloat("Insira a qtd de litros:\n");
+	float consumo = distancia/litros;
+	if(consumo<8)
+		printf("Venda o carro!\n");
+	else if(consumo> 8 && consumo <14)
+		printf("Economico! \n");
+	else if(consumo > 14)
+		printf("Super economico!\n");
+	return Continuar();
+}
+int Ex27()
+{
+	int idade = (int)GetFloat("Digite a idade do nadador:\n");
+	if(idade >= 5 && idade <8)
+	{
+		printf("Infantil A\n");
+	}
+	else if(idade >=8 && idade <=10)
+	{
+		printf("Infantil B\n");
+	}
+	else if(idade >= 11 && idade <=13)
+	{
+		printf("Juvenil A \n");
+	}
+	else if(idade>=14 && idade<18)
+	{
+		printf("Juvenil B \n");
+	}
+	else if(idade >=18)
+	{
+		printf("Senior \n");
+	}
+	return Continuar();
+}
+int Ex28()
+{
+	return Continuar();
+}
+int Ex29()
+{
+	return Continuar();
+}
+int Ex30()
+{
+	return Continuar();
+}
+int Ex31()
+{
+	return Continuar();
+}
+int Ex32()
+{
+	return Continuar();
+}
+int Ex33()
+{
+	return Continuar();
+}
+int Ex34()
+{
+	return Continuar();
+}
+int Ex35()
+{
+	return Continuar();
+}
+int Ex36()
+{
+	return Continuar();
+}
+int Ex37()
+{
+	return Continuar();
+}
+int Ex38()
+{
+	return Continuar();
+}
+int Ex39()
+{
+	return Continuar();
+}
+int Ex40()
+{
+	float custo = GetFloat("Insira o custo de fabrica");
+		
+	return Continuar();
+}
+int Ex41()
+{
+	
+	float peso = GetFloat("Digite seu peso:\n");
+	float altura = GetFloat("Digite sua altura:\n");
+	float imc = peso/(altura*altura);
+	if(imc <= 18.5)
+	{
+		printf("Abaixo do Peso \n");
+	}
+	else if(imc>18.5 && imc <=24.9)
+	{
+		printf("Saudavel \n");
+	}
+	else if(imc>=25 && imc<=29.9)
+	{
+		printf("Peso em excesso \n");
+	}
+	else if(imc>=30 && imc<=34.9)
+	{
+		printf("Obesidade Grau I \n");
+	}
+	else if(imc>=35 && imc <=39.9)
+	{
+		printf("Obesidade Grau II(severa) \n");
+	}
+	else
+	{
+		printf("Obesidade Grau III(morbida)\n");
+	}
+	return Continuar();
+}
+
