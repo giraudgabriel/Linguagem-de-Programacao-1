@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1569535426 source:c:\users\gabriel\desktop\linguagemprogramacaoi\exercicios\exercicios26setembro\ex5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
