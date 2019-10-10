@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1570668353 source:c:\users\gabriel\desktop\linguagemprogramacaoi\exercicios\prova\prova\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdbool.h>
+
