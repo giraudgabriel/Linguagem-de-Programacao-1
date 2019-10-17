@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1571268972 source:c:\users\gabriel\desktop\linguagemprogramacaoi\exercicios\rg e cnpj\cnpj\cnpj\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdlib.h>
+	<string.h>
+
