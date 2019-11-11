@@ -41,7 +41,7 @@ int main()
 
     printf("\n Consumo total: %0.2f kW \n",consumoTotal);
 
-    //Porcentagem
+    //Porcentagem de cada eletrodomestico
     for (int j = 0; j < 5; j++)
         printf("%s : %0.2f kW  -> %0.2f %% \n",eletrodomesticos[j].nome,eletrodomesticos[j].consumo, (eletrodomesticos[j].consumo/consumoTotal) * 100);
 
