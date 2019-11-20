@@ -1,1 +1,4 @@
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+sjc 200000
+jacarei 2000
+sp 3000000 
+mg 4000000000
