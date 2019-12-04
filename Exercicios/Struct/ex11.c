@@ -8,7 +8,7 @@ typedef struct	Aluno {
     float media; 
 }Aluno;
 
-int main(int argc, char const *argv[])
+int main()
 {
     Aluno alunos[10],aprovados[10],reprovados[10];
     int a = 0, r = 0;
