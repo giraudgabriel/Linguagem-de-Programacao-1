@@ -29,7 +29,7 @@ int main()
     while (!feof(fr1))
     {
         flag = 0;
-        for (i = 0; i < sizeof(palavra) / sizeof(palavra[0]); i++)
+        for (i = 0; i < strlen(palavra); i++)
         {
             if (getc(fr1) != palavra[i])
             {
